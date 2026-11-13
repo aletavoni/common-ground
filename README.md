@@ -1,6 +1,6 @@
 # Common Ground
 
-A collection of four classroom games about collective action, climate cooperation and Nash equilibrium. Each game explains its rules, research context and selected bot strategies.
+A collection of eight classroom games about collective action, climate cooperation and Nash equilibrium. Each game explains its rules, research context and selected bot strategies.
 
 ## Play
 
@@ -12,6 +12,10 @@ A collection of four classroom games about collective action, climate cooperatio
 | Climate Coordination | [Play](https://aletavoni.github.io/common-ground/climate-coordination.html) | Inequality, nonbinding pledges and a shared climate target; six players. |
 | Climate Clubs | [Play](https://aletavoni.github.io/common-ground/climate-clubs.html) | Treaties, conditional commitments, sanctions and retaliation; three nations. |
 | IF/THEN: The commitment game | [Play](https://aletavoni.github.io/common-ground/if-then.html) | Conditional cooperation and the most cooperative compatible outcome; 2–15 players. |
+| Last Call | [Play](https://aletavoni.github.io/common-ground/last-call.html) | Bargaining, unequal endowments, binding side deals and shrinking targets; six countries. |
+| Civic Desk | [Play](https://aletavoni.github.io/common-ground/civic-desk.html) | Representation, nonbinding advice and costly punishment; four teams. |
+| The Dial | [Play](https://aletavoni.github.io/common-ground/the-dial.html) | Public Good-or-Bad provision, free-riding and free-driving; three players. |
+| Mandate | [Play](https://aletavoni.github.io/common-ground/mandate.html) | Strategic delegation with linear or quadratic benefits; principal and agent seats. |
 
 Each game is a self-contained HTML file and runs entirely in your browser, with no installation, sign-in or server-side code. Bots follow selected equilibrium strategies; they are not estimates of research participants' behavior. Teaching adaptations and equilibrium assumptions are described in each app's guide.
 
@@ -23,6 +27,10 @@ Choices remain in browser memory and reset on refresh. CSV exports are generated
 * **Climate Coordination:** Tavoni, Dannenberg, Kallis and Löschel (2011), *Inequality, communication, and the avoidance of disastrous climate change in a public goods game*, PNAS 108, 11825–11829. [Paper](https://doi.org/10.1073/pnas.1102493108).
 * **Climate Clubs:** Casari and Tavoni (2024), *Climate clubs in the laboratory*, Journal of Behavioral and Experimental Economics 110, 102211. [Paper](https://doi.org/10.1016/j.socec.2024.102211).
 * **IF/THEN:** Casari, Ordaz-Cuevas and Tavoni, *“I Will If You Will” in Climate Mitigation: Conditional Cooperation in the Lab*, working paper supplied by the author.
+* **Last Call:** Gosnell and Tavoni (2017), *A bargaining experiment on heterogeneity and side deals in climate negotiations*, Climatic Change 142, 575–586. [Paper](https://doi.org/10.1007/s10584-017-1975-3).
+* **Civic Desk:** Kim, İriş, Lee and Tavoni (2025), *Representation, Peer Pressure and Punishment in a Public Goods Game*, Environmental and Resource Economics 88, 1407–1433. [Paper](https://doi.org/10.1007/s10640-025-00970-6).
+* **The Dial:** Heyen, Lohse and Tavoni, *Public Gobs in the Lab*, supplied working paper dated 13 November 2026.
+* **Mandate:** Schmid, Tavoni and Winkler, *Strategic Delegation in a Standard Public Goods Game*, supplied October 2026 working paper.
 
 ## Publish with GitHub Pages
 
