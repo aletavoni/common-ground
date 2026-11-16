@@ -1,6 +1,6 @@
 # Common Ground
 
-A collection of eight classroom games about collective action, climate cooperation and Nash equilibrium. Each game explains its rules, research context and selected bot strategies.
+A collection of nine classroom games about collective action, climate cooperation and Nash equilibrium. Each game explains its rules, research context and selected bot strategies.
 
 ## Play
 
@@ -16,6 +16,7 @@ A collection of eight classroom games about collective action, climate cooperati
 | Civic Desk | [Play](https://aletavoni.github.io/common-ground/civic-desk.html) | Representation, nonbinding advice and costly punishment; four teams. |
 | The Dial | [Play](https://aletavoni.github.io/common-ground/the-dial.html) | Public Good-or-Bad provision, free-riding and free-driving; three players. |
 | Mandate | [Play](https://aletavoni.github.io/common-ground/mandate.html) | Strategic delegation with linear or quadratic benefits; principal and agent seats. |
+| Switchboard | [Play](https://aletavoni.github.io/common-ground/switchboard.html) | Conventions, social tipping, pair versus group coordination and multiple Nash equilibria; 8 or 16 players. |
 
 Each game is a self-contained HTML file and runs entirely in your browser, with no installation, sign-in or server-side code. Bots follow selected equilibrium strategies; they are not estimates of research participants' behavior. Teaching adaptations and equilibrium assumptions are described in each app's guide.
 
@@ -31,6 +32,8 @@ Choices remain in browser memory and reset on refresh. CSV exports are generated
 * **Civic Desk:** Kim, İriş, Lee and Tavoni (2025), *Representation, Peer Pressure and Punishment in a Public Goods Game*, Environmental and Resource Economics 88, 1407–1433. [Paper](https://doi.org/10.1007/s10640-025-00970-6).
 * **The Dial:** Heyen, Lohse and Tavoni, *Public Gobs in the Lab*, supplied working paper dated 13 November 2026.
 * **Mandate:** Schmid, Tavoni and Winkler, *Strategic Delegation in a Standard Public Goods Game*, supplied October 2026 working paper.
+
+* **Switchboard:** Wieczorek, Pizziol and Tavoni, *Social Tipping Points: An Experiment*, working paper supplied by the author on 16 November 2026. Implements all four G8/P8/G16/P16 treatments, selected pure and symmetric mixed Nash bots, 5+5 or 21+21 periods, and a separate two-option tipping calculator. The 420/600 payoff equation is preserved; bot selection and classroom adaptations are explained in the app.
 
 ## Publish with GitHub Pages
 
