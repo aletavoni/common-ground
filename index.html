@@ -120,7 +120,7 @@ function historyTable(final = false) {
 
 function botPanel() {
   const mode = game.mode;
-  return `<aside class="bots-panel"><h2>Meet your group</h2><p>Two higher budgets. Two lower budgets. One shared problem.</p><div class="bot-row"><span class="avatar you">Y</span><div class="bot-copy">You<small>Started with ${game.players[0].endowment} units</small></div><span class="bot-state">HUMAN</span></div>${game.players.slice(1).map((p, i) => `<div class="bot-row"><span class="avatar ${['green', 'gold', 'blue'][i]}">${p.name[0]}</span><div class="bot-copy">${p.name}<small>Started with ${p.endowment} units</small></div><span class="bot-state">BOT · FIXED PLAN</span></div>`).join('')}<div class="bot-note"><strong>Their plan is no secret.</strong><br>${mode === 'private' ? 'Each bot invests 20 privately in rounds 1–3, then spends zero. They never add to the shared solution.' : 'Each bot invests 4 publicly every round, for a total of 40 each. They never buy private protection.'}<br>They follow this plan even if you play differently.</div><button class="inline-button guide-link" id="in-game-guide">Why is this a Nash equilibrium? ↗</button></aside>`;
+  return `<aside class="bots-panel"><h2>Meet your group</h2><p>Two higher budgets. Two lower budgets. One shared problem.</p><div class="bot-row"><span class="avatar you">Y</span><div class="bot-copy">You<small>Started with ${game.players[0].endowment} units</small></div><span class="bot-state">HUMAN</span></div>${game.players.slice(1).map((p, i) => `<div class="bot-row"><span class="avatar ${['green', 'gold', 'blue'][i]}">${p.name[0]}</span><div class="bot-copy">${p.name}<small>Started with ${p.endowment} units</small></div><span class="bot-state">BOT · FIXED PLAN</span></div>`).join('')}<div class="bot-note"><strong>Their plan is no secret.</strong><br>${mode === 'private' ? 'Each bot invests 20 privately in rounds 1–3, then spends zero. They never add to the shared solution.' : 'Each bot invests 4 publicly every round, for a total of 40 each. They never buy private protection.'}<br>They follow this plan even if you play differently.</div><button class="inline-button guide-link" id="in-game-guide">Instructions</button></aside>`;
 }
 
 function reviewContent() {
@@ -215,11 +215,11 @@ function downloadResults() {
 
 </script>
 </head>
-<body>
+<body><div style="font:12px/1.4 system-ui,sans-serif;padding:9px 20px;background:#f7f5ef;color:#344b41;border-bottom:1px solid #d9ded2;position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap"><span><a href="https://sites.google.com/view/alessandro-tavoni/" style="color:#344b41;text-decoration:none">Alessandro Tavoni</a> &nbsp;·&nbsp; <a href="games.html" style="color:#344b41">All games</a></span><a href="https://doi.org/10.1073/pnas.2504632123" target="_blank" rel="noopener" style="color:#344b41;font-weight:600">Paper ↗</a></div>
   <a class="skip-link" href="#main">Skip to game</a>
   <header class="site-header">
     <a class="brand" href="" aria-label="Common Ground home"><svg viewBox="0 0 38 38" aria-hidden="true"><path d="M8 23V13L19 6l11 7v10l-11 8zM8 13l11 7 11-7M19 20v11"/></svg><span>COMMON GROUND<span class="brand-sub">AN INTERACTIVE ECONOMICS LAB</span></span></a>
-    <button class="text-button" id="open-guide">How it works <span aria-hidden="true">↗</span></button>
+    <button class="text-button" id="open-guide">Instructions</button>
   </header>
   <main id="main" tabindex="-1">
     <section id="setup-view" aria-labelledby="setup-heading">
@@ -244,13 +244,13 @@ function downloadResults() {
         </fieldset>
         <div class="setup-bottom"><fieldset class="role-options"><legend>Your starting budget <span>All units arrive at the start.</span></legend><label><input type="radio" name="wealth" value="80" checked><span>80 <small>units</small></span></label><label><input type="radio" name="wealth" value="120"><span>120 <small>units</small></span></label></fieldset><div class="start-area"><button class="primary" id="start-game">Enter the game <span aria-hidden="true">→</span></button><small>No sign-up. No real money.</small></div></div>
       </section>
-      <p class="teaching-note">A classroom adaptation of the private–public goods game in Malthouse et al. (2026). <button class="inline-button" id="source-info">See the rules & research ↗</button></p>
+      <p class="teaching-note">A classroom adaptation of the private–public goods game in Malthouse et al. (2026). <button class="inline-button" id="source-info">Instructions</button></p>
     </section>
     <section id="game-view" hidden aria-labelledby="game-heading"></section>
     <section id="results-view" hidden aria-labelledby="results-heading"></section>
   </main>
-  <footer><span>COMMON GROUND</span><span>Individual choices. Collective consequences.</span><button class="inline-button" id="footer-source">About this game</button></footer>
-  <dialog id="guide-dialog" aria-labelledby="guide-title"><div class="dialog-top"><p class="eyebrow">A QUICK FIELD GUIDE</p><button class="close-button" id="close-guide" aria-label="Close guide">×</button></div><h2 id="guide-title">How the game works</h2><div class="guide-body">
+  <footer><span>COMMON GROUND</span><span>Individual choices. Collective consequences.</span><button class="inline-button" id="footer-source">Instructions</button></footer>
+  <dialog id="guide-dialog" aria-labelledby="guide-title"><div class="dialog-top"><p class="eyebrow">A QUICK FIELD GUIDE</p><button class="close-button" id="close-guide" aria-label="Close instructions">×</button></div><h2 id="guide-title">How the game works</h2><div class="guide-body">
     <p>You play with three bots. The group always contains <strong>two players with 120 units and two with 80</strong>. Your starting budget is your total budget for all ten rounds.</p>
     <ol><li><strong>Make a choice each round.</strong> Invest whole units in public protection, private protection, or both. Spend at most 20 in total that round and never more than you have left. You can spend zero.</li><li><strong>Contributions accumulate.</strong> Group public contributions of at least 160 protect everyone. Your own private contributions of at least 60 protect only you. Investments cannot be withdrawn or refunded, even if both targets are met.</li><li><strong>After round 10, calculate payoffs.</strong> If either target protects you, your payoff is your unspent money. Otherwise, it is zero. There is no random disaster draw.</li></ol>
     <h3>What does “Nash equilibrium” mean?</h3><p>A set of plans where no player can earn more by changing their own plan while everyone else keeps theirs. It does not have to be the best outcome for the group.</p>
