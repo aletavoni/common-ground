@@ -28,11 +28,11 @@ Choices remain in browser memory and reset on refresh. CSV exports are generated
 
 ### Private solution trap: unknown bot plans
 
-Alongside the two disclosed bot plans, choose **What will the others do?** for a game with unknown bot plans. A single 50/50 draw at the start selects the same plan for all three bots: either 20 units privately in rounds 1–3, or 4 units publicly in every round. The plan remains fixed for all ten rounds.
+Alongside the two disclosed bot plans, choose **What will the others do?**. Each round, an independent 50/50 draw assigns the same plan to all three bots. On a private draw, each bot invests up to 20 units toward its own 60-unit protection target, and stops once it reaches that target. On a public draw, each bot invests up to 4 units publicly. In both cases a bot cannot invest more than its remaining budget.
 
-This version shows only your own contributions, private protection and budget during play. Bot contributions, the shared total and shared protection are withheld until the final results, so the strategy cannot be inferred from round feedback. The results reveal which plan was selected and show the full history. Best-response comparisons are labeled as hindsight benchmarks. Replaying this setup makes a fresh draw.
+The current plan and contributions are revealed immediately after you confirm your choice. The round history shows past draws, public and private bot contributions, and the cumulative public total. Past draws don’t affect the next one. Results summarize the draws and compare your payoff with the best possible payoff had you known the bots’ realized public total from the start.
 
-CSV exports retain the selected setup in `mode` (`private`, `public` or `unknown`) and append the realized strategy in `bot_mode` (`private` or `public`).
+CSV exports retain the selected setup in `mode` (`private`, `public` or `unknown`) and record the strategy drawn for each round in `bot_mode` (`private` or `public`).
 
 ## Research
 
