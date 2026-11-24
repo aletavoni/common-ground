@@ -26,6 +26,14 @@ Each game is a self-contained HTML file and runs entirely in your browser, with 
 
 Choices remain in browser memory and reset on refresh. CSV exports are generated locally. The apps have no analytics or external runtime dependencies; the hosting provider may keep ordinary access logs.
 
+### Private solution trap: unknown bot plans
+
+Alongside the two disclosed bot plans, choose **What will the others do?** for a game with unknown bot plans. A single 50/50 draw at the start selects the same plan for all three bots: either 20 units privately in rounds 1–3, or 4 units publicly in every round. The plan remains fixed for all ten rounds.
+
+This version shows only your own contributions, private protection and budget during play. Bot contributions, the shared total and shared protection are withheld until the final results, so the strategy cannot be inferred from round feedback. The results reveal which plan was selected and show the full history. Best-response comparisons are labeled as hindsight benchmarks. Replaying this setup makes a fresh draw.
+
+CSV exports retain the selected setup in `mode` (`private`, `public` or `unknown`) and append the realized strategy in `bot_mode` (`private` or `public`).
+
 ## Research
 
 * **Private solution trap:** Malthouse et al. (2026), *The private solution trap in collective action problems across 34 nations*, PNAS 123, e2504632123. [Paper](https://doi.org/10.1073/pnas.2504632123).
