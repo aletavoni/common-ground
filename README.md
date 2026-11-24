@@ -28,11 +28,11 @@ Choices remain in browser memory and reset on refresh. CSV exports are generated
 
 ### Private solution trap: unknown bot plans
 
-Alongside the two disclosed bot plans, choose **What will the others do?**. Each round, an independent 50/50 draw assigns the same plan to all three bots. On a private draw, each bot invests up to 20 units toward its own 60-unit protection target, and stops once it reaches that target. On a public draw, each bot invests up to 4 units publicly. In both cases a bot cannot invest more than its remaining budget.
+Alongside the two disclosed bot plans, choose **What will the others do?**. Each bot gets its own independent 50/50 draw every round, so Ada can draw private while Sam draws public in the same round. On a private draw, each bot invests up to 20 units toward its own 60-unit protection target, and stops once it reaches that target. On a public draw, each bot invests up to 4 units publicly. In both cases a bot cannot invest more than its remaining budget.
 
-The current plan and contributions are revealed immediately after you confirm your choice. The round history shows past draws, public and private bot contributions, and the cumulative public total. Past draws don’t affect the next one. Results summarize the draws and compare your payoff with the best possible payoff had you known the bots’ realized public total from the start.
+Each bot’s plan and contribution are revealed immediately after you confirm your choice. The round history shows each bot’s past draws and contributions, plus the cumulative public total. Past draws don’t affect the next ones. Results summarize the draws and compare your payoff with the best possible payoff had you known the bots’ realized public total from the start.
 
-CSV exports retain the selected setup in `mode` (`private`, `public` or `unknown`) and record the strategy drawn for each round in `bot_mode` (`private` or `public`).
+CSV exports retain the selected setup in `mode` (`private`, `public` or `unknown`) and record each bot’s plan for that round in `bot_mode` (`private` or `public`). That field is blank for the human player.
 
 ## Research
 
